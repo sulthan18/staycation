@@ -58,6 +58,18 @@ export default function Hero(props) {
               <img
                 width="36"
                 height="36"
+                src={IconCities}
+                alt={`${props.data.IconCities} Cities`}
+              />
+              <h6 className="mt-3">
+                {props.data.cities}{" "}
+                <span className="text-gray-500 font-weight-light">Cities</span>
+              </h6>
+            </div>
+            <div className="col-auto">
+              <img
+                width="36"
+                height="36"
                 src={IconFavorites}
                 alt={`${props.data.favorites} Favorites`}
               />
@@ -66,18 +78,6 @@ export default function Hero(props) {
                 <span className="text-gray-500 font-weight-light">
                   Favorites
                 </span>
-              </h6>
-            </div>
-            <div className="col-auto">
-              <img
-                width="36"
-                height="36"
-                src={IconCities}
-                alt={`${props.data.IconCities} Cities`}
-              />
-              <h6 className="mt-3">
-                {props.data.cities}{" "}
-                <span className="text-gray-500 font-weight-light">Cities</span>
               </h6>
             </div>
           </div>
